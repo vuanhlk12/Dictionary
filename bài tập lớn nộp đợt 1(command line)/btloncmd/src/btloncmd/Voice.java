@@ -19,18 +19,30 @@ public class Voice {
 	 * Constructor
 	 */
 	private String line;
+        private String language="en";
 	public void setLine(String a) {
 		this.line=a;
 	}
+
+
+    public String getLanguage() {
+        return language;
+    }
+
+    public void setLanguage(String language) {
+        this.language = language;
+    }
 	
 	public void speak() {
 		String text=this.line;
+                synthesizer.setLanguage(language);
 		//System.out.println(text);
 
 		// Create a new Thread because JLayer is running on the current Thread and will
 		// make the application to lag
 		Thread thread = new Thread(() -> {
 			try {
+                            
 
 				// Create a JLayer instance
 				AdvancedPlayer player = new AdvancedPlayer(synthesizer.getMP3Data(text));

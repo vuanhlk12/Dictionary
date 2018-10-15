@@ -99,10 +99,11 @@ public class Main {
 					break;
 				case 6://gg
 					Voice b;
-					System.out.println("Nhập từ tiếng anh hoặc tiếng việt: ");
+					System.out.println("Nhập từ tiếng anh: ");
 					input = new Scanner(System.in);
 					item = input.nextLine();
 					b = new Voice();
+                                        b.setLanguage("en");
 					b.setLine(item);
 					b.speak();
 					break;
