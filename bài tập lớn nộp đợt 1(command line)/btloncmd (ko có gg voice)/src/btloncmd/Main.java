@@ -39,7 +39,7 @@ public class Main {
 				System.out.println("2. Tìm từ");
 				System.out.println("3. Thêm từ");
 				System.out.println("4. Xóa từ");
-				System.out.println("5. Google translate // bản này chưa có");
+				System.out.println("5. Google translate");
 				System.out.println("6. Google voice //bản này chưa có");
 				System.out.println("7. Lưu thay đổi");
 				boolean temp;
@@ -94,6 +94,17 @@ public class Main {
 						System.out.println("Đã xóa từ: " + item);
 					else
 						System.out.println("Không tìm thấy từ: " + item);
+					break;
+                                case 5://gg
+					System.out.println("Nhập từ tiếng anh (có thể dịch cả câu): ");
+					input = new Scanner(System.in);
+					item = input.nextLine();
+					try {
+						System.out.println(GoogleTranslate.translate("en", "vi", item));
+
+					} catch (IOException e) {
+						e.printStackTrace();
+					}
 					break;
 				
 				case 7:
