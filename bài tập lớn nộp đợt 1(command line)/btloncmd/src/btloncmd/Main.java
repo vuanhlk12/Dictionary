@@ -9,16 +9,7 @@ package btloncmd;
  *
  * @author FEELSBADMAN
  */
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
-/**
- *
- * @author FEELSBADMAN
- */
 import java.io.IOException;
 import java.util.Scanner;
 import java.text.ParseException;
@@ -106,7 +97,15 @@ public class Main {
 						e.printStackTrace();
 					}
 					break;
-				
+				case 6://gg
+					Voice b;
+					System.out.println("Nhập từ tiếng anh hoặc tiếng việt: ");
+					input = new Scanner(System.in);
+					item = input.nextLine();
+					b = new Voice();
+					b.setLine(item);
+					b.speak();
+					break;
 				case 7:
 					a1.refreshfile();
 					break;

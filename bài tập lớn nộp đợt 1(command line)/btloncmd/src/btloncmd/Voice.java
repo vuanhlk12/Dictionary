@@ -1,9 +1,6 @@
-package BTLon;
+package btloncmd;
 
 import java.io.IOException;
-
-import com.darkprograms.speech.synthesiser.SynthesiserV2;
-
 import javazoom.jl.decoder.JavaLayerException;
 import javazoom.jl.player.advanced.AdvancedPlayer;
 
