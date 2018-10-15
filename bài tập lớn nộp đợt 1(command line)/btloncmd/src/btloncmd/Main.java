@@ -31,7 +31,7 @@ public class Main {
 				System.out.println("3. Thêm từ");
 				System.out.println("4. Xóa từ");
 				System.out.println("5. Google translate");
-				System.out.println("6. Google voice //bản này chưa có");
+				System.out.println("6. Google voice");
 				System.out.println("7. Lưu thay đổi");
 				boolean temp;
 				input = new Scanner(System.in);
